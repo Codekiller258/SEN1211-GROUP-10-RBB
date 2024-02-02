@@ -1,4 +1,4 @@
-## RBB - social risks and collective adaptations
+## RBB - Government flood adaptation strategies using societal risk
 
 ### Introduction
 This directory contains a RBB, which can be used to simulate what kind of collective adaptations (policies) will be used and decided by the government. This directory serves for the agent-based model of flood adaptation. The corresponding theory used in this model is FN method. Due to the fact that we want to make this model reuseable and separate from the big assignment, it contains many difference with this part in the big assignment. The model is overall simplified here for the RBB purpose, and the data used here is not necessary the same with the big assignment, but it can be later easily used in the big assignment.
@@ -16,6 +16,7 @@ To set up the project environment, follow these steps:
    ```
 
 ### File descriptions
+The `input_data` file contains all the needed data to run the RBB model.
 The `model` directory contains the actual Python code for the RBB model. It has the following files:
 - `agents.py`: Defines the `Government` agent class, each representing a local government agent in the model. These agents have attributes related to flood depth, Annual  probability of exceedance, exposure rate and number of people, and their policy decision (collective adaptation) is influenced by these factors. This script is crucial for modeling the decisions of the Government. Notice that there is no household agent in the RBB, because the RBB is only for simulating the behavior of government agent and collective measures.
 - `functions.py`: Contains utility functions for the model, including setting initial values, calculating flood damage, and processing geographical data. These functions are essential for data handling and mathematical calculations within the model.
